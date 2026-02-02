@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kosmetické péče – Petra Gogogvá</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #e6efe6;
+      --primary: #9db39a;
+      --accent: #c8d6c5;
+      --dark: #2f3a2f;
+      --soft: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    nav {
+      background: var(--soft);
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .list {
+      background: var(--soft);
+      padding: 2.5rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .list ol { padding-left: 1.2rem; }
+    .list li { margin-bottom: 0.6rem; }
+
+    .price-list p {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed var(--accent);
+      padding: 0.5rem 0;
+    }
+
+    footer {
+      background: #1f2a1f;
+      color: #dfe6df;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    footer strong { color: white; }
+  
+    .fade-text {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .fade-text:nth-child(2) { animation-delay: 0.3s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#sluzby">Služby</a>
+  <a href="#cenik">Ceník</a>
+  <a href="#studio">O studiu</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<header>
+  <h1>Kosmetické péče, revitalizace pleti a masáže</h1>
+  <p>Petra Gogogvá – profesionální kosmetická péče s individuálním přístupem</p>
+</header>
+
+<section id="sluzby">
+  <h2>Základní kosmetická péče</h2>
+  <div class="list">
+    <p><strong>Délka trvání:</strong> 1:30–1:45 h</p>
+    <ol>
+      <li>Čištění pleti silikonovou hlavicí s použitím vhodného čistícího gelu dle typu pleti (normální / smíšená, suchá, mastná, citlivá nebo problematická)</li>
+      <li>Čištění ultrazvukovou špachtlí</li>
+      <li>Ruční čištění zanesených pórů, případně odstranění milií</li>
+      <li>Úprava obočí – odstranění nadbytečných chloupků ručně nebo voskovými páskami</li>
+      <li>Barvení obočí</li>
+      <li>Masáž obličeje a dekoltu s použitím kosmetiky Payot</li>
+      <li>Enzymatický a mechanický peeling</li>
+      <li>Maska dle typu pleti</li>
+      <li>Aplikace peptidového séra pomocí galvanizačního zařízení / boost séra pomocí mikroproudu</li>
+      <li>Aplikace očního a hydratačního krému</li>
+    </ol>
+
+    <div class="note">
+      <p>➕ Barvení řas: příplatek 70 Kč</p>
+      <p>➕ Další dva programy galvanizace + gely: příplatek 150 Kč</p>
+    </div>
+  </div>
+</section>
+
+<section id="studio">
+  <h2>O mně</h2>
+  <div class="list">
+    <p class="fade-text">Jsem certifikovaná kosmetička s profesionálním přístupem a důrazem na individuální potřeby každé klientky. Pravidelně se vzdělávám v oblasti moderních kosmetických postupů a pracuji s kvalitními produkty i přístrojovou péčí.</p>
+    <p class="fade-text">Mým cílem je nejen zdravější a krásnější pleť, ale také chvíle klidu, regenerace a rovnováhy.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Atmosféra & inspirace</h2>
+  <div class="image-grid">
+    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" alt="vodopád">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="příroda">
+    <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1" alt="barvy přírody">
+  </div>
+</section>
+
+<section id="cenik">
+  <h2>Ceník</h2>
+  <div class="list price-list">
+    <p><span>Základní kosmetická péče</span><span>1 200 Kč</span></p>
+    <p><span>Masáž zad, rukou a krku (45 minut – příplatek po kosmetickém ošetření)</span><span>400 Kč</span></p>
+    <p><span>Barvení řas (příplatek)</span><span>70 Kč</span></p>
+    <p><span>Galvanizace – 2 programy + gely</span><span>150 Kč</span></p>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <p><strong>Petra Gogogvá</strong></p>
+  <p>Kosmetické péče, revitalizace pleti a masáže</p>
+  <p>📍 Jedličkova 1157, Litvínov</p>
+  <p>📞 725 425 861 | ✉️ pgogova@seznam.cz</p>
+</footer>
+
+</body>
+</html>
